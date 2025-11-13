@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🍎 Jogo da Memória - Android
 
 Um jogo da memória desenvolvido em Android usando Kotlin, Jetpack Compose e arquitetura MVVM com
@@ -344,3 +345,7 @@ Desenvolvido com ❤️ usando as melhores práticas de desenvolvimento Android 
 - [ ] Conquistas e badges
 - [ ] Estatísticas detalhadas
 - [ ] Temas personalizáveis
+=======
+# appJogoDaMemoria
+Projeto final da disciplina de Des. de Aplicativos Móveis.
+>>>>>>> 9d5f23be2f522ea6ca7ce5b71792da9566cfe50c
