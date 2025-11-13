@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "666457847955",
+    "project_id": "appjogodamemoria-2b92e",
+    "storage_bucket": "appjogodamemoria-2b92e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:666457847955:android:e1717a1382d8afbdebb566",
+        "android_client_info": {
+          "package_name": "com.example.appjogodamemoria"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD19LN76PlbAVtIjnsyzLHuKYmZL8iLgsY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
