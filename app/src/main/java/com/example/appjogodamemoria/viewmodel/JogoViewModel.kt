@@ -16,7 +16,6 @@ data class JogoUiState(
     val carregando: Boolean = false,
     val erro: String? = null
 )
-
 class JogoViewModel(private val repositorio: RepositorioJogo) : ViewModel() {
 
     private val _uiState = MutableStateFlow(JogoUiState())
@@ -26,7 +25,6 @@ class JogoViewModel(private val repositorio: RepositorioJogo) : ViewModel() {
         carregarCartas()
         carregarPontuacoes()
     }
-
     private fun carregarCartas() {
         viewModelScope.launch {
             repositorio.listarCartas().collectLatest { lista ->
@@ -34,7 +32,6 @@ class JogoViewModel(private val repositorio: RepositorioJogo) : ViewModel() {
             }
         }
     }
-
     private fun carregarPontuacoes() {
         viewModelScope.launch {
             repositorio.listarPontuacoes().collectLatest { lista ->
@@ -42,7 +39,6 @@ class JogoViewModel(private val repositorio: RepositorioJogo) : ViewModel() {
             }
         }
     }
-
     fun sincronizarCartas() {
         viewModelScope.launch {
             _uiState.value = _uiState.value.copy(carregando = true)
@@ -55,7 +51,6 @@ class JogoViewModel(private val repositorio: RepositorioJogo) : ViewModel() {
             }
         }
     }
-
     fun salvarPontuacao(nome: String, pontos: Int) {
         viewModelScope.launch {
             try {

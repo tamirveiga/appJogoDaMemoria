@@ -116,7 +116,6 @@ fun TelaJogo(navController: NavController) {
             }
         }
     }
-
     Surface(
         modifier = Modifier.fillMaxSize(),
         color = MaterialTheme.colorScheme.background
@@ -153,7 +152,7 @@ fun TelaJogo(navController: NavController) {
                     modifier = Modifier.fillMaxSize()
                 ) {
                     Text(
-                        text = "🎉 Parabéns! 🎉",
+                        text = "🎉 Parabéns!!! 🎉",
                         fontSize = 24.sp,
                         fontWeight = FontWeight.Bold
                     )

@@ -47,7 +47,7 @@ fun TelaMenuPrincipal(navController: NavController) {
                 ) {
                     Column {
                         Text(
-                            text = "Olá, $nomeUsuario! 👋",
+                            text = "Olá, $nomeUsuario. 👋",
                             style = MaterialTheme.typography.titleMedium,
                             fontWeight = FontWeight.Bold
                         )

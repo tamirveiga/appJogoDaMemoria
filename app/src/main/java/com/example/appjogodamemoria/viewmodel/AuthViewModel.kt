@@ -83,7 +83,7 @@ class AuthViewModel(
                 email.isBlank() || !email.contains("@") -> {
                     _uiState.value = _uiState.value.copy(
                         carregando = false,
-                        erro = "Email válido é obrigatório"
+                        erro = "Email válido é obrigatório!"
                     )
                     return@launch
                 }
@@ -91,7 +91,7 @@ class AuthViewModel(
                 senha.length < 6 -> {
                     _uiState.value = _uiState.value.copy(
                         carregando = false,
-                        erro = "Senha deve ter pelo menos 6 caracteres"
+                        erro = "Senha deve ter no mínimo 6 caracteres"
                     )
                     return@launch
                 }
@@ -99,7 +99,7 @@ class AuthViewModel(
                 senha != confirmarSenha -> {
                     _uiState.value = _uiState.value.copy(
                         carregando = false,
-                        erro = "Senhas não coincidem"
+                        erro = "Senhas não coincidem!"
                     )
                     return@launch
                 }

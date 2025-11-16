@@ -113,7 +113,7 @@ fun TelaLogin(navController: NavController) {
                 onClick = { navController.navigate("cadastro") },
                 enabled = !uiState.carregando
             ) {
-                Text("Não tem conta? Cadastre-se")
+                Text("Ainda não tem conta? Cadastre-se")
             }
 
             // Divider com texto
