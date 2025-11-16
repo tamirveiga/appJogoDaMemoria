@@ -43,7 +43,7 @@ fun TelaPerfil(navController: NavController) {
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
                     Text(
-                        text = "Nenhum usuário logado",
+                        text = "Nenhum usuário logado!",
                         style = MaterialTheme.typography.headlineSmall
                     )
                     Spacer(modifier = Modifier.height(16.dp))

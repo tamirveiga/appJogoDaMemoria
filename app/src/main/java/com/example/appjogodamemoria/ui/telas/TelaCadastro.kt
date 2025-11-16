@@ -26,7 +26,7 @@ fun TelaCadastro(navController: NavController) {
     var senha by remember { mutableStateOf(TextFieldValue("")) }
     var confirmarSenha by remember { mutableStateOf(TextFieldValue("")) }
 
-    // Navegar para menu após cadastro bem-sucedido
+    // Navegar para menu após cadastro bem-sucedido!
     LaunchedEffect(uiState.estaLogado) {
         if (uiState.estaLogado && uiState.sucessoCadastro) {
             authViewModel.limparSucessoCadastro()
@@ -137,7 +137,7 @@ fun TelaCadastro(navController: NavController) {
                 onClick = { navController.popBackStack() },
                 enabled = !uiState.carregando
             ) {
-                Text("Já tem conta? Faça login")
+                Text("Já tem conta? Faça login!")
             }
 
             // Mostrar erro se houver
