@@ -13,28 +13,28 @@ padrão **MVVM** com persistência local e sincronização em nuvem.
 
 ## ✨ Principais Funcionalidades
 
-### 🎯 **Jogo da Memória**
+###  **Jogo da Memória**
 
 - Grid 4x4 com 8 pares de frutas
 - Sistema de pontuação (+10 por acerto)
 - Contador de tentativas
 - Classificação por performance
 
-### 👤 **Sistema de Usuários**
+###  **Sistema de Usuários**
 
 - Cadastro e login seguro
 - Perfil completo com estatísticas
 - Ranking global por tentativas
 - Administradores com CRUD completo
 
-### 🏆 **Ranking Inteligente**
+###  **Ranking Inteligente**
 
 - Ordenação por **menor número de tentativas**
 - Medalhas para top 3 jogadores
 - Histórico de melhor pontuação
 - Status de jogador baseado em performance
 
-### ⚙️ **Administração**
+###  **Administração**
 
 - Login especial para admins (`admin@admin.com` / `123456`)
 - CRUD completo de usuários
@@ -50,14 +50,14 @@ padrão **MVVM** com persistência local e sincronização em nuvem.
 - **MVVM** - Arquitetura robusta
 - **Material 3** - Design system
 
-## 🚀 Como Executar
+##  Como Executar
 
 1. **Clone o repositório**
 2. **Abra no Android Studio**
 3. **Sincronize as dependências**
 4. **Execute em dispositivo/emulador** (API 24+)
 
-## 👥 Contas de Teste
+##  Contas de Teste
 
 **Administrador:**
 - Email: `admin@admin.com`
@@ -67,13 +67,9 @@ padrão **MVVM** com persistência local e sincronização em nuvem.
 
 - Cadastre-se normalmente no app
 
-## 📊 Sistema de Classificação
+##  Sistema de Classificação
 
-- 🏆 **≤12 tentativas**: Mestre da Memória
-- ⭐ **≤16 tentativas**: Jogador Experiente
-- 🎯 **≤20 tentativas**: Bom Jogador
-- 📈 **>20 tentativas**: Continue Praticando
-
----
-
-**Desenvolvido com ❤️ usando tecnologias modernas do Android**
+-  **≤12 tentativas**: Mestre da Memória
+-  **≤16 tentativas**: Jogador Experiente
+-  **≤20 tentativas**: Bom Jogador
+-  **>20 tentativas**: Continue Praticando
