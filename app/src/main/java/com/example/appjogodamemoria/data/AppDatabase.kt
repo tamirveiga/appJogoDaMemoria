@@ -11,7 +11,7 @@ import com.example.appjogodamemoria.data.repository.RepositorioUsuario
 import com.example.appjogodamemoria.model.Usuario
 import com.example.appjogodamemoria.viewmodel.AdminUsuarioViewModel
 import com.example.appjogodamemoria.viewmodel.AuthViewModel
-import com.example.appjogodamemoria.viewmodel.FabricaViewModel
+import com.example.appjogodamemoria.viewmodel.ViewModelFactory
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -28,7 +28,7 @@ object AppDatabase {
     private var REPOSITORIO_USUARIO_INSTANCE: RepositorioUsuario? = null
 
     @Volatile
-    private var FABRICA_INSTANCE: FabricaViewModel? = null
+    private var VIEW_MODEL_FACTORY_INSTANCE: ViewModelFactory? = null
 
     @Volatile
     private var AUTH_VIEW_MODEL_INSTANCE: AuthViewModel? = null
@@ -127,11 +127,11 @@ object AppDatabase {
         }
     }
 
-    fun getFabricaViewModel(context: Context): FabricaViewModel {
-        return FABRICA_INSTANCE ?: synchronized(this) {
+    fun getViewModelFactory(context: Context): ViewModelFactory {
+        return VIEW_MODEL_FACTORY_INSTANCE ?: synchronized(this) {
             val repositorio = getRepositorioJogo(context)
-            val instance = FabricaViewModel(repositorio)
-            FABRICA_INSTANCE = instance
+            val instance = ViewModelFactory(repositorio)
+            VIEW_MODEL_FACTORY_INSTANCE = instance
             instance
         }
     }

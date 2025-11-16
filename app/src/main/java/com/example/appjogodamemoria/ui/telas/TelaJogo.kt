@@ -47,7 +47,7 @@ fun gerarCartas(): List<CartaJogo> {
 @Composable
 fun TelaJogo(navController: NavController) {
     val context = LocalContext.current
-    val fabrica = AppDatabase.getFabricaViewModel(context)
+    val fabrica = AppDatabase.getViewModelFactory(context)
     val viewModel: JogoViewModel = viewModel(factory = fabrica)
 
     // Estado do jogo
