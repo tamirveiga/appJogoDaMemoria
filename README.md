@@ -7,7 +7,7 @@ padrão **MVVM** com persistência local e sincronização em nuvem.
 
 ### 🎥 Vídeo do App Funcionando
 
-*[Inserir aqui o vídeo ou GIF do aplicativo em funcionamento]*
+*https://github.com/tamirveiga/appJogoDaMemoria/blob/main/assets/demo.mp4*
 
 ---
 
