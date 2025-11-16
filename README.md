@@ -41,7 +41,7 @@ padrão **MVVM** com persistência local e sincronização em nuvem.
 - Controle de permissões
 - Gerenciamento de contas
 
-## 🛠️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 - **Kotlin** - Linguagem principal
 - **Jetpack Compose** - Interface moderna
